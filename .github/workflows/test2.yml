@@ -1,0 +1,10 @@
+name : testjob
+on: push 
+jobs:
+    test-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Hello display
+              run: echo "Hello kamal"
+            - name: display date
+              run: date
