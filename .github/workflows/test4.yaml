@@ -1,0 +1,14 @@
+name: test4workflow
+on: workflow_dispatch
+jobs:
+    checkout:
+        runs-on: ubuntu-latest
+        steps:
+            - name: cteate a file
+              run: echo "Welcome to github actions" > kk1.txt
+            - name: display content
+              run: cat kk1.txt
+            - name: display date
+              run: date
+            - name: display present directory
+              run: pwd 
