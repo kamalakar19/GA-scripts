@@ -1,0 +1,17 @@
+
+name: file operations on github actions
+on: push 
+jobs:
+    files:
+        runs-on: ubuntu-latest
+        steps:
+            - name: create a file
+              run: echo "welcome to gitgub actions kamal" > kk.txt
+            - name: display the content of a file
+              run: cat kk.txt
+            - name: display date
+              run: date
+            - name: display files and directories
+              run: ls -latr
+            - name: display the present location 
+              run: pwd
