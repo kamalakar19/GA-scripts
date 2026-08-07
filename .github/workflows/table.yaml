@@ -10,10 +10,12 @@ jobs:
             uses: actions/checkout@v7
           - name: display content
             run: cat tab.sh
+          - name: Show script
+            run: cat -n tab.sh
           - name: uptime
             run: uptime
           - name: sleep
-            run: sleep 60
+            run: sleep 20
           - name: permission 
             run: chmod u+x tab.sh
           - name: run the script
