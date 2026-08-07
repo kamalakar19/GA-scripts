@@ -1,4 +1,4 @@
-name: parallel jobs execution testing
+name: sequential jobs testing 
 
 on: workflow_dispatch
 
