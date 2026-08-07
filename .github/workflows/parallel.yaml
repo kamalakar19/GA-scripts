@@ -1,0 +1,27 @@
+name: parallel jobs execution testing
+on: workflow_dispatch
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job1 step
+        run: echo "This is job1 running"
+        run: sleep 20
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job2 step
+        run: echo "This is job2 running"
+        run: sleep 20
+  job3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job3 step
+        run: echo "This is job3 running"
+        run: sleep 20
+  job4:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job4 step
+        run: echo "This is job4 running"
+        run: sleep 20
