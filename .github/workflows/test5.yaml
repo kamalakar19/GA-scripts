@@ -1,5 +1,6 @@
 name: test5
-on: workflow_dispatch
+on: 
+  workflow_dispatch
 jobs:
     checkout:
       runson: ubuntu-latest
