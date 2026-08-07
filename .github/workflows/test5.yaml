@@ -1,0 +1,12 @@
+name: test5
+on: workflow_dispatch
+jobs:
+    checkout:
+      runson: ubuntu-latest
+      steps:
+          - name: checkout the repo
+            uses: actions/checkout@v7
+          - name: display content
+            run: cat devops.txt
+          - name: display date 
+            run: date
