@@ -1,0 +1,20 @@
+name: to print table
+
+on: workflow_dispatch
+
+jobs:
+    table:
+        runs-on: ubuntu-latest
+        steps:
+          - name: checkout code
+            uses: actions/checkout@v7
+          - name: display content
+            run: cat tab.sh
+          - name: uptime
+            run: uptime
+          - name: sleep
+            run: sleep 60
+          - name: permission 
+            run: chmod u+x tab.sh
+          - name: run the script
+            run: ./tab.sh
