@@ -1,4 +1,4 @@
-name: variable demo
+name: variablejoblevel demo
 
 on: workflow_dispatch
 
