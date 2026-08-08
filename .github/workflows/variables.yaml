@@ -1,0 +1,18 @@
+name: variables demo
+
+on: workflow_dispatch
+
+jobs:
+    variabledemo:
+        runs-on: ubuntu-latest
+        steps:
+            - name: steplevelvariable
+              env:
+                CITY: Anantapur
+                TRAINER: kamal
+               run: |
+                 echo "City is $CITY"
+                 echo "Trainer is $TRAINER"
+            - name: next step
+              run: |
+                echo "City is $CITY and Trainer is $TRAINER"
