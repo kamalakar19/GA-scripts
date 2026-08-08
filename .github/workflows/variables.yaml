@@ -10,7 +10,7 @@ jobs:
               env:
                 CITY: Anantapur
                 TRAINER: kamal
-               run: |
+              run: |
                  echo "City is $CITY"
                  echo "Trainer is $TRAINER"
             - name: next step
