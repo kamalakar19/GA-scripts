@@ -1,0 +1,16 @@
+name: variable demo
+
+on: workflow_dispatch
+
+jobs:
+    variable1demo:
+        runs-on: ubuntu-latest
+        env:
+            COMPANY: KKFUNDA
+            TRAINER: PRASHNATH
+        steps:
+            - name: step one
+              run: echo "company name is $COMPANY and trainer is $TRAINER"
+            - name: step two
+              run: echo "company name is $COMPANY and trainer is $TRAINER"
+    
