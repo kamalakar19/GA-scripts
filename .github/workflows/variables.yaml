@@ -5,7 +5,7 @@ on: workflow_dispatch
 jobs:
     variabledemo:
         runs-on: ubuntu-latest
-         steps:
+        steps:
             - name: steplevelvariable
               env:
                 CITY: Anantapur
