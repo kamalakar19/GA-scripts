@@ -1,6 +1,6 @@
 
 name: file operations on github actions
-on: push 
+on: workflow_dispatch
 jobs:
     files:
         runs-on: ubuntu-latest

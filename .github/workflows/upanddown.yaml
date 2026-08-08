@@ -1,0 +1,25 @@
+name: upload and download of a artifact
+
+on: workflow_dispatch
+
+jobs:
+  job1: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: create a file
+        run: echo "Hi kamal..upload and download" > kamal.txt 
+      - name: upload file as artifact
+        uses: actions/upload-artifact@v7
+        with: 
+          name: kamalfile
+          path: kamal.txt
+  job2:
+    runs-on: ubuntu-latest
+    needs: job1 
+    steps:
+      - name: download artifact
+        uses: actions/download-artifact@v8
+        with:
+          name: kamalfile
+      - name: show content file
+        run: cat kamal.txt 
