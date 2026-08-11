@@ -11,5 +11,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running workflow"
-      - run: echo "sleep 300"
+      - run: sleep 300
       - run: echo "Finished"
