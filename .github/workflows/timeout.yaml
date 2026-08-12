@@ -7,7 +7,7 @@ on: workflow_dispatch
 jobs:
    sample:
       runs-on: ubuntu-latest
-      timeout-minutes: 5
+      timeout-minutes: 1
       steps:
          - name: start
            run: echo "job started"
