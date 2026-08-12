@@ -1,0 +1,17 @@
+
+name: without matrix 
+
+on: workflow_dispathc
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print OS
+        run: echo "running on ubuntu-latest"
+
+  windows:
+    run-on: windows-latest
+    steps:
+      - name: print OS
+        run: echo "running on Windows"
