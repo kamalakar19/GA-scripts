@@ -1,0 +1,19 @@
+
+
+name: timeout example 
+
+on: workflow_dispatch
+
+jobs:
+   sample:
+      runs-on: ubuntu-latest
+      timeout-minutes: 5
+      steps:
+         - name: start
+           run: echo "job started"
+
+         - name: sleep
+           run: sleep 400 
+
+         - name: end
+           run: echo "job finished"
