@@ -11,7 +11,7 @@ jobs:
         run: echo "running on ubuntu-latest"
 
   windows:
-    run-on: windows-latest
+    runs-on: windows-latest
     steps:
       - name: print OS
         run: echo "running on Windows"
