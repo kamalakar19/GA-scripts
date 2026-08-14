@@ -1,7 +1,7 @@
 
 name: without matrix 
 
-on: workflow_dispathc
+on: workflow_dispatch
 
 jobs:
   ubuntu:
